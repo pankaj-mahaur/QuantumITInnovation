@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Product Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Grid</h1>
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div class="filter-box">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="home">Home & Garden</option>
+                    </select>
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-500">$100 - $500</option>
+                    </select>
+                </div>
+                <div class="upload-box">
+                    <input type="file" id="imageUpload" accept="image/*" multiple>
+                    <button id="addProductBtn">Add Products</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here -->
+            </div>
+            <div class="loading" id="loading">Loading products...</div>
+        </main>
+
+        <footer>
+            <button id="loadMore">Load More Products</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
